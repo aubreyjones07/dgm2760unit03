@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+<link rel="stylesheet" type="text/css" href="css/main.css">          
+<title>The Guessing Game</title>       
+</head>
+<body>
+   
+  
+    
+<header>  
+<div class="header">    
+<img src="images/guessinggameheader.png" onload="loadquestionmarksImage()" class="questionmarksimage">   
+<h1 id="company" class="companyname"></h1>
+<h2 id="slogan" class="companyslogan"></h2>
+</div>
+</header>     
+    
+ 
+<main>
+   
+    
+    
+<h1 class="companynamepage">Hi/Lo Guessing Game</h1>    
+    
+   
+    
+   
+<h1 class="skills">What I learned:</h1>    
+<ul class="listofskills">
+<li>Demonstrate Variable Scope</li>    
+<li>Implement Functions</li>
+<li>Implement a Multi Level If-Then-Else</li>    
+<li>Use innerHTML to Provide User Feedback</li> 
+<li>Dynamically Load a Graphic</li>    
+<li>Create and Append an Image Element</li> 
+</ul>    
+    
+   
+    
+    
+ <h1 class="skills">Instructions:</h1>  
+    
+    
+<p class="instructions">In this game, you try to guess a random number between 1 and 15 in as few tries as possible. You will receive a ribbon depending on how many guesses it takes you to win in the game. Feel free to refresh the page if you wish to play again. Good Luck! </p>
+    
+ 
+    
+    
+
+    
+    
+    
+    
+<div>
+<h2 class="gametitles">Play</h2>    
+<div>
+<input id="guess" type="number" placeholder="number"/>    
+<button onclick="evalGuess()">Guess</button>    
+</div>    
+</div>    
+    
+<div>
+<h2 class="gametitles">Trys</h2>    
+<div id="attempts"></div>       
+</div>    
+    
+<div>
+<h2 class="gametitles">Feedback</h2>    
+<div id="feedback"></div>       
+</div>    
+    
+<div>
+<h2 class="gametitles">Award</h2>    
+<div id="ribbon"></div>       
+</div>   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</main>
+    
+<footer>
+ 
+ <div class="copyright">      
+        
+    <p>Copyright &copy; October 2018 Aubrey Barnes</p>
+    
+ </div>        
+    
+    
+    
+</footer>    
+    
+    
+</body> 
+<script src="js/main.js"></script>    
+
+</html>
