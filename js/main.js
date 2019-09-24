@@ -78,6 +78,12 @@ function evalGuess() {
         case 7:  
         case 8:
         case 9:
+        case 10:  
+        case 11:
+        case 12:
+        case 13:  
+        case 14:
+        case 15:
         console.log('You earned a yellow ribbon!')
         imagePath = 'images/yellowthirdplaceribbon.jpg'
         break;
