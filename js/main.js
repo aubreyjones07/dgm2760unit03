@@ -4,6 +4,13 @@
 /*global alert*/
 
 
+
+function loadguessinggameImage() {
+    
+}
+
+
+
 var companyTitle = "The Guessing Game";
 document.getElementById("company").innerHTML = companyTitle;
 
@@ -18,7 +25,7 @@ document.getElementById("slogan").innerHTML = companySlogan;
 
 
 let correctNumber = Math.floor(Math.random() * 15)
-
+console.log('The correct number is: ' + correctNumber)
 
 
 let guessed = false
@@ -26,7 +33,6 @@ let totalGuesses = 0
 let gamerGuess = 0
 correctNumber += 1
 
-console.log('The correct number is ${correctNumber}')
 
 function evalGuess() {
     totalGuesses += 1 //totalGuesses = totalGuesses + 1
@@ -35,8 +41,8 @@ function evalGuess() {
     const feedback = document.querySelector('#feedback')
     
     if (gamerGuess == correctNumber) {
-        console.log('gamerGuess is equal to correctNumber')
-        feedback.innerText = 'You win'
+        console.log(gamerGuess + ' is equal to ' + correctNumber)
+        feedback.innerText = 'You win! ' + 'Your total guesses are ' + totalGuesses 
         giveAward()
     } else if (gamerGuess > correctNumber && gamerGuess < 16) {
         feedback.innerText = 'Too high, try again'
@@ -48,6 +54,7 @@ function evalGuess() {
     }
     
     document.querySelector('#attempts').innerText = totalGuesses
+    
     }
         
         
@@ -62,13 +69,19 @@ function evalGuess() {
         console.log('You earned a blue ribbon!')
         imagePath = 'images/bluefirstplaceribbon.jpg'
         break;
-        case 4;  
+        case 4:  
         case 5:
         case 6:
-        console.log('You earned a blue ribbon!')
+        console.log('You earned a red ribbon!')
         imagePath = 'images/redsecondplaceimage.jpeg'
         break;
-        // do the rest here
+        case 7:  
+        case 8:
+        case 9:
+        console.log('You earned a yellow ribbon!')
+        imagePath = 'images/yellowthirdplaceribbon.jpg'
+        break;
+        // 
   }
      
     const awardImage = document.createElement('img') // Creates a <img> element
